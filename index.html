@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .background {
+            background-image: url(./images/bg-flower.jpg);
+            background-position: center;
+            height: 80vh;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-[#ffe4d3]">
+        <div class="container mx-auto flex justify-between items-center h-full">
+            <!-- logo -->
+            <a href="#">
+                <img src="/images/flower-logo.png" alt="" class="w-36">
+            </a>
+            <nav>
+                <!-- nav mobile view trigger start -->
+                <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+                    <i class="ri-menu-4-line text-4xl text-primary"></i>
+                </div>
+                <!-- nav mobile view trigger end -->
+
+
+                <ul class="fixed w-full h-0 p-0 bg-[#ffe4d3] overflow-hidden border-t top-[90px] 
+                left-0 right-0 flex flex-col gap-20 lg:relative lg:flex-row lg:p-0 lg:border-none 
+                lg:top-0 lg:h-full transition-all duration-300" id="nav_menu">
+                    <a href="#" class="flex items-center">
+                        <li class="font-semibold text-sm">COLLECTIONS</li>
+                    </a>
+
+                    <a href="#" class="flex items-center">
+                        <li class="font-semibold text-sm">ABOUT</li>
+                    </a>
+
+                    <a href="#" class="flex items-center">
+                        <li class="font-semibold text-sm">CONTACT</li>
+                    </a>
+
+                    <a href="">
+                        <button
+                            class="py-2 px-8 rounded-md bg-[#e2cdbc] hover:bg-transparent hover:border-[#e2cdbc] hover:border-[4px] text-sm font-bold">SHOP</button>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"></div>
+
+    <main>
+        <div class="background" data-aos="fade-up" data-aos-duration="3000">
+            <h1
+                class="pt-36 sm:pt-60 text-4xl sm:text-5xl md:text-6xl flex justify-center font-semibold text-[#fff] text-center px-4 font-['Libre']">
+                Custom Dried Flower Bouquets</h1>
+            <h3
+                class="font-bold text-lg sm:text-xl md:text-2xl flex justify-center pt-10 text-center px-4 font-['Poppins'] text-[#fff]">
+                Free
+                delivery on orders over $79</h3>
+            <div class="btn-content flex justify-center w-full pt-16">
+                <button
+                    class="bg-[#eae3d7] font-bold text-[#000000] text-sm sm:text-base px-8 py-2 rounded-md hover:bg-[#d6cfc7] transition duration-300">SHOP</button>
+            </div>
+            <div
+                class="bg-footer flex flex-col md:flex-row items-center justify-between mx-4 sm:mx-10 pt-16 md:pt-32 xl:pt-64">
+                <div class="icon-sosmed flex gap-6 justify-center md:justify-start mb-4 md:mb-0">
+                    <i class="bi bi-instagram text-xl text-[#fff]"></i>
+                    <i class="bi bi-twitter-x text-xl text-[#fff]"></i>
+                    <i class="bi bi-facebook text-xl text-[#fff]"></i>
+                    <i class="bi bi-globe text-xl text-[#fff]"></i>
+                </div>
+                <div class="dried-pampas-content flex gap-4 items-center justify-center md:justify-end">
+                    <h2 class="font-bold text-center md:text-right text-[#fff] font-['Poppins']">DRIED PAMPAS COLLECTION
+                    </h2>
+                    <i class="bi bi-arrow-right text-3xl text-[#fff]"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="section1 min-h-screen bg-[#efe2d9]">
+            <p class="font-['Poppins'] text-xs font-bold flex justify-center text-[#d3a590] pt-24">THIS IS WHAT WE DO
+            </p>
+            <h1 class="font-['Libre'] font-medium text-4xl flex justify-center pt-10">Our Services</h1>
+            <div
+                class="container-card pt-20 pb-20 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center">
+                <div class="flower-card w-80 bg-[#e7cbb5] rounded-t-full" data-aos="fade-right">
+                    <img src="./images/vasAndPlant1.jpg" alt="" class="w-80 h-80 bg-cover rounded-t-full">
+                    <h2 class="flex justify-center pt-8 text-3xl font-['Libre'] font-semibold">Custom Bouquets</h2>
+                    <p class="text-center px-8 pt-4 text-sm font-['Poppins'] font-normal">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Itaque minima omnis quisquam,</p>
+                    <a href="" class="flex justify-center py-6">
+                        <button class="font-['Poppins'] font-medium text-lg">READ MORE</button>
+                    </a>
+                </div>
+
+                <div class="flower-card w-80 bg-[#e7cbb5] rounded-t-full" data-aos="fade-up-right">
+                    <img src="./images/vasAndPlant2.jpg" alt="" class="w-80 h-80 bg-cover rounded-t-full">
+                    <h2 class="flex justify-center pt-8 text-3xl font-['Libre'] font-semibold">Custom Bouquets</h2>
+                    <p class="text-center px-8 pt-4 text-sm font-['Poppins'] font-normal">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Itaque minima omnis quisquam,</p>
+                    <a href="" class="flex justify-center py-6">
+                        <button class="font-['Poppins'] font-medium text-lg">READ MORE</button>
+                    </a>
+                </div>
+
+                <div class="flower-card w-80 bg-[#e7cbb5] rounded-t-full" data-aos="fade-up-left">
+                    <img src="./images/vasAndPlant3.jpg" alt="" class="w-80 h-80 bg-cover rounded-t-full">
+                    <h2 class="flex justify-center pt-8 text-3xl font-['Libre'] font-semibold">Custom Bouquets</h2>
+                    <p class="text-center px-8 pt-4 text-sm font-['Poppins'] font-normal">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Itaque minima omnis quisquam,</p>
+                    <a href="" class="flex justify-center py-6">
+                        <button class="font-['Poppins'] font-medium text-lg">READ MORE</button>
+                    </a>
+                </div>
+
+                <div class="flower-card w-80 bg-[#e7cbb5] rounded-t-full" data-aos="fade-left">
+                    <img src="./images/vasAndPlant1.jpg" alt="" class="w-80 h-80 bg-cover rounded-t-full">
+                    <h2 class="flex justify-center pt-8 text-3xl font-['Libre'] font-semibold">Custom Bouquets</h2>
+                    <p class="text-center px-8 pt-4 text-sm font-['Poppins'] font-normal">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Itaque minima omnis quisquam,</p>
+                    <a href="" class="flex justify-center py-6">
+                        <button class="font-['Poppins'] font-medium text-lg">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2 flex flex-col lg:flex-row">
+            <div class="section-left flex-1 p-6 lg:p-12 lg:h-[38vh]">
+                <p class="font-['Poppins'] text-xs font-bold flex justify-center text-[#d3a590] pt-16 lg:pt-2"
+                    data-aos="flip-left">REMEMBER
+                    YOUR LOVED ONES</p>
+                <h1 class="text-[#4a4a4a] font-bold font-['Libre'] text-3xl flex justify-center pt-6">Gift Ideas That
+                    Last Longer</h1>
+                <div class="text-content text-center flex justify-center pt-8" data-aos="flip-right"
+                    data-aos="zoom-in-down">
+                    <p class="font-['Poppins'] text-sm lg:w-96 w-full font-medium text-[#4a4a4a] px-4 lg:px-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut adipisci reiciendis temporibus id
+                        iste architecto esse dolor cum odit, ipsa totam est voluptatem, eius dolore error impedit ex a
+                        ratione?.
+                    </p>
+                </div>
+                <div class="button-content flex justify-center pt-10 pb-20" data-aos="zoom-in-up">
+                    <button class="px-8 py-3 bg-[#e7cbb5] text-xs font-['Poppins'] font-bold rounded-md">LET'S
+                        GO</button>
+                </div>
+            </div>
+            <div class="section-right flex-1 relative">
+                <img src="./images/bouquets5.jpeg" alt=""
+                    class="absolute inset-0 mx-auto lg:left-2 rounded-b-full lg:w-3/6 w-4/6 h-auto lg:h-[32rem] object-cover"
+                    data-aos="zoom-out-up">
+            </div>
+        </section>
+
+        <section class="section3 bg-[#e7cbb5] py-16">
+            <p class="pt-36 lg:pt-0"> </p>
+            <p class="font-['Poppins'] text-xs font-bold flex justify-center text-[#d3a590] pt-96 lg:pt-0"
+                data-aos="flip-left">DRIED FLOWER
+                COLLECTION</p>
+            <h1 class="text-[#4a4a4a] font-bold font-['Libre'] text-3xl flex justify-center pt-6">See What's Popular
+            </h1>
+            <div class="container-card2 grid gap-10 pt-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center">
+                <div class="card-collection w-72 bg-white rounded-lg border-4 border-[#8b5e3c] p-4"
+                    data-aos="fade-right">
+                    <img src="./images/bouquets1.jpeg" alt="" class="w-full h-60 bg-cover rounded-lg">
+                    <div class="container-info flex justify-between pt-5">
+                        <div class="like-comment flex items-center gap-4">
+                            <div class="like flex gap-2 items-center">
+                                <i class="bi bi-heart-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">609</p>
+                            </div>
+                            <div class="comment flex items-center gap-2">
+                                <i class="bi bi-chat-right-text-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">120</p>
+                            </div>
+                        </div>
+                        <p class="font-['Poppins'] font-bold text-sm text-[#4a4a4a]">SHARE</p>
+                    </div>
+                </div>
+
+                <div class="card-collection w-72 bg-white rounded-lg border-4 border-[#8b5e3c] p-4"
+                    data-aos="fade-up-right">
+                    <img src="./images/bouquets2.jpeg" alt="" class="w-full h-60 bg-cover rounded-lg">
+                    <div class="container-info flex justify-between pt-5">
+                        <div class="like-comment flex items-center gap-4">
+                            <div class="like flex gap-2 items-center">
+                                <i class="bi bi-heart-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">609</p>
+                            </div>
+                            <div class="comment flex items-center gap-2">
+                                <i class="bi bi-chat-right-text-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">120</p>
+                            </div>
+                        </div>
+                        <p class="font-['Poppins'] font-bold text-sm text-[#4a4a4a]">SHARE</p>
+                    </div>
+                </div>
+
+                <div class="card-collection w-72 bg-white rounded-lg border-4 border-[#8b5e3c] p-4"
+                    data-aos="fade-up-left">
+                    <img src="./images/bouquets3.jpeg" alt="" class="w-full h-60 bg-cover rounded-lg">
+                    <div class="container-info flex justify-between pt-5">
+                        <div class="like-comment flex items-center gap-4">
+                            <div class="like flex gap-2 items-center">
+                                <i class="bi bi-heart-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">609</p>
+                            </div>
+                            <div class="comment flex items-center gap-2">
+                                <i class="bi bi-chat-right-text-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">120</p>
+                            </div>
+                        </div>
+                        <p class="font-['Poppins'] font-bold text-sm text-[#4a4a4a]">SHARE</p>
+                    </div>
+                </div>
+
+                <div class="card-collection w-72 bg-white rounded-lg border-4 border-[#8b5e3c] p-4"
+                    data-aos="fade-left">
+                    <img src="./images/bouquets4.jpeg" alt="" class="w-full h-60 bg-cover rounded-lg">
+                    <div class="container-info flex justify-between pt-5">
+                        <div class="like-comment flex items-center gap-4">
+                            <div class="like flex gap-2 items-center">
+                                <i class="bi bi-heart-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">609</p>
+                            </div>
+                            <div class="comment flex items-center gap-2">
+                                <i class="bi bi-chat-right-text-fill text-[#4a4a4a]"></i>
+                                <p class="text-sm font-['Poppins'] font-medium text-[#4a4a4a]">120</p>
+                            </div>
+                        </div>
+                        <p class="font-['Poppins'] font-bold text-sm text-[#4a4a4a]">SHARE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4 flex justify-center bg-[#efe2d9] border-b-[3px] border-b-[#000000]">
+            <div class="container-section4 w-[21rem] lg:w-[34rem] lg:h-[25rem] bg-[#E6CCBB] rounded-t-full mt-14 mb-0"
+                data-aos="zoom-in">
+                <h1 class="text-[#4a4a4a] font-bold font-['Libre'] text-3xl flex justify-center pt-28">Talk To Our Staff
+                </h1>
+                <div class="text-content text-center flex justify-center pt-8">
+                    <p class="font-['Poppins'] text-sm lg:w-96 w-full font-medium text-[#4a4a4a] px-4 lg:px-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut adipisci reiciendis temporibus id
+                        iste architecto esse dolor cum odit, ipsa totam est voluptatem, eius dolore error impedit ex a
+                        ratione?.
+                    </p>
+                </div>
+                <div class="button-content flex justify-center pt-10 pb-20 cursor-pointer">
+                    <button class="px-8 py-3 bg-[#efe2d9] text-xs font-['Poppins'] font-bold rounded-md"
+                        data-aos="zoom-out">LET'S
+                        TALK</button>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer-top bg-[#efe2d9] py-10">
+        <div
+            class="footer-container flex flex-col lg:flex-row lg:justify-between px-6 md:px-12 lg:px-20 gap-10 lg:items-center">
+            <div class="container-left lg:w-1/3 flex flex-col items-center lg:items-start text-center lg:text-left">
+                <img src="./images/flower-logo.png" alt="Flower Logo" class="w-52 mb-4">
+            </div>
+            <div
+                class="container-right flex flex-col lg:flex-row gap-10 lg:gap-20 w-full lg:w-2/3 justify-center lg:justify-end">
+                <div class="line-col1 flex flex-col items-center lg:items-start">
+                    <ul class="space-y-2">
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            +62 812 9867 7501</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            github.com</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            FIND A STORE</li>
+                    </ul>
+                </div>
+                <div class="line-col2 flex flex-col items-center lg:items-start">
+                    <p class="font-['Poppins'] text-sm font-bold text-[#4a4a4a] mb-2">CONTACT US</p>
+                    <ul class="space-y-2">
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            ORDERING PAYMENT</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            SHIPPING</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            RETURNS</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            FAQ</li>
+                    </ul>
+                </div>
+                <div class="line-col3 flex flex-col items-center lg:items-start">
+                    <p class="font-['Poppins'] text-sm font-bold text-[#4a4a4a] mb-2">ABOUT US</p>
+                    <ul class="space-y-2">
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            WORK WITH US</li>
+                        <li
+                            class="font-['Poppins'] text-sm text-[#4a4a4a] flex justify-center lg:flex lg:justify-start">
+                            TERMS & CONDITIONS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-bottom bg-[#E6CCBB] py-4">
+        <div class="footer-section flex flex-col md:flex-row items-center justify-between px-4 md:px-20">
+            <p class="text-center md:text-left text-sm">2024 © • Custom Dried Flower Bouquets • Made by Fadhil Akbar
+                Djunaedi</p>
+            <div class="icon-content flex gap-4 mt-6 md:mt-0">
+                <i class="bi bi-instagram text-xl"></i>
+                <i class="bi bi-twitter-x text-xl"></i>
+                <i class="bi bi-facebook text-xl"></i>
+                <i class="bi bi-globe text-xl"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
